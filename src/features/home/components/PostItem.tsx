@@ -1,0 +1,1 @@
+export const PostItem = () => <h2>PostItem</h2>;

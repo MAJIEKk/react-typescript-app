@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
-import { HomeFeature, ContactsFeature } from "../../features/";
+import { HomeFeature, ContactsFeature } from "../../features";
 
 export const AppRouter = () => {
   return (

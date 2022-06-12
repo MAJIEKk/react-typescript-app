@@ -1,16 +1,12 @@
-import {
-  HomeFeature,
-  HeaderFeature,
-  FooterFeature,
-  PageFeature,
-} from "./features";
+import { AppRouter } from "./common/components";
+import { HeaderFeature, FooterFeature, PageFeature } from "./features";
 
 function App() {
   return (
     <div className="App">
       <HeaderFeature />
       <PageFeature>
-        <HomeFeature />
+        <AppRouter />
       </PageFeature>
       <FooterFeature />
     </div>

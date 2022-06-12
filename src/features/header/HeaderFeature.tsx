@@ -3,18 +3,20 @@ import { css } from "@emotion/react";
 import { MenuNavigation } from "./components";
 
 export const HeaderFeature = () => {
-  <header
-    css={css`
-      background-color: gray;
-    `}
-  >
-    <div
+  return (
+    <header
       css={css`
-        min-width: 1200px;
-        margin: auto;
+        background-color: gray;
       `}
     >
-      <MenuNavigation />
-    </div>
-  </header>;
+      <div
+        css={css`
+          min-width: 1200px;
+          margin: auto;
+        `}
+      >
+        <MenuNavigation />
+      </div>
+    </header>
+  );
 };

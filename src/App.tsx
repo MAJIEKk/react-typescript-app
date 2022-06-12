@@ -1,12 +1,19 @@
-import {HomeFeature, HeaderFeature, FooterFeature} from "./features";
+import {
+  HomeFeature,
+  HeaderFeature,
+  FooterFeature,
+  PageFeature,
+} from "./features";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <HeaderFeature />
-      <HomeFeature />
+      <PageFeature>
+        <HomeFeature />
+      </PageFeature>
       <FooterFeature />
-      </div>
+    </div>
   );
 }
 

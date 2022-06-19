@@ -1,6 +1,8 @@
-import { ReactNode } from "react";
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+
 import { Link } from "react-router-dom";
-import { useDataPosts } from "../hooks";
+
 import { PostInterface } from "../interfaces";
 import { PostItem } from "./PostItem";
 
@@ -9,10 +11,15 @@ interface Props {
 }
 
 export const PostList = ({ posts }: Props) => (
-  <div>
+  <div
+    css={css`
+      display: flex;
+      flex-wrap: wrap;
+    `}
+  >
     {posts.map((post) => (
-      <PostItem post={post} />
+      <PostItem key={post.id} post={post} />
     ))}
-    <Link to={"/contacts"}>Go to Contacts</Link>
+    {/* <Link to={"/contacts"}>Go to Contacts</Link> */}
   </div>
 );

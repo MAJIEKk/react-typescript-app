@@ -8,6 +8,7 @@ export const AppRouter = () => {
       <Route path="/contacts" element={<ContactsFeature />}></Route>
       <Route path="/post/:postId" element={<PostFeature />}></Route>
       <Route path="/dashboard"></Route>
+      <Route path="/post/:postId/:type" element={<PostFeature />} />
     </Routes>
   );
 };
